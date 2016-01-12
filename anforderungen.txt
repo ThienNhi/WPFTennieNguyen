@@ -1,0 +1,11 @@
+- CSS getrennt, KEIN Inline-CSS!!!!!!!
+- PHP-Session (z. B. Login für Admin/User)
+- MySQL-Anbindung (mit mysqli)
+- AJAX-Request mit Antwort im JSON-Format
+- mindestens eine JS-Funktion, externe Datei!!!
+- jQuery mindestens einmal genutzt
+- Minimierte CSS-/JS-Datei
+- Komprimierung mit Deflate oder GZIP
+- via htaccess oder vorkomprimiert
+- Caching mit htaccess
+- mindestens eine umgesetzte Suchmaschinenoptimierung
