@@ -1,0 +1,119 @@
+h1 {
+	color: white;
+    text-align: center;
+}
+
+body.test{ 
+    margin:50px 0px 0px 0px;
+    font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+    color: #333333;
+    background: #111111 url("../img/sunset2.jpg") repeat fixed top center;
+}
+
+div#content {
+    width:50%;
+    background-color:rgba(0, 0, 0, .5);
+    font-family: serif;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left:25%;
+    border: solid 2px #000000;
+}
+
+div#inner {
+    width:80%;
+    background-color: white;
+    font-family: serif;
+    border: 1px solid black;
+    border-radius: 20px 20px 0px 0px;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: solid 0.5px #000000;
+    padding: 15px 50px;
+}
+
+div#text{
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    opacity:1;
+}
+
+ul#menue {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul#menue li {
+    float: left;
+}
+
+ul#menue li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid #555;
+}
+
+ul#login {
+	float:right;
+	list-style-type:none;
+}
+
+div#nav-outer {
+    margin: 20px 0px 0px 80px;
+    padding: 0;
+    width: 15%;
+    background-color: transparent;
+    position: fixed;
+    height: 100%;
+}
+
+ul#navbar {
+    color:white;
+    list-style-type: none;
+    background: transparent;
+    text-align: center;
+    width: 80%;
+    height:80%;
+    position: absolute;
+}
+
+ul#navbar li a img {
+    width: 50%;
+    height: 30%;
+}
+
+ul#navbar li a {
+    display: block;
+    color: #fff;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    border-radius: 20px;
+}
+
+li a:hover {
+    background-color: #777;
+}
+
+div#footer {
+    color:#cccccc;
+    background: transparent url("../img/footer.png") repeat scroll top left;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+    text-align: center;
+    font-size: 150%;
+    font-family: serif;
+    padding: 10px 20px 20px;
+}
