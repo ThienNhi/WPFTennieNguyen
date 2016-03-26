@@ -124,3 +124,38 @@ div#footer {
     font-family: serif;
     padding: 10px 20px 20px;
 }
+
+div.galerie{
+    padding: 3px;
+    background-color:#ebebeb;
+    border:1px solid #CCC;
+    float: left;
+    margin: 1px;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+
+div.galerie:hover{
+    border:1px solid #333;
+}
+
+div.galerie span{
+    display:block;
+    text-align:center;
+    font-size:10px;
+}
+
+div.file {
+    padding:4px 4px 4px 30px;
+}
+
+div.file.even{
+    background-color: #ebebeb;
+}
+
+div.file a {
+    text-decoration:none;
+}
+
+div.file:hover {
+    background-color:#CCC;
+}
