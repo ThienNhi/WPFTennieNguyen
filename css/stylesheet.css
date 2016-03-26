@@ -159,3 +159,8 @@ div.file a {
 div.file:hover {
     background-color:#CCC;
 }
+
+.button {
+    margin:10px;
+    width:100px;
+}

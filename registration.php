@@ -13,11 +13,10 @@
     <div id="content">
 				<div id="inner">
 				<div id="text">        
-					<h2>Login</h2>
+					<h2>Registration</h2>
 					<div class ="in">
 						<form action="login.php" method="post">
-							<ul id="login" >
-								<div class="form">
+							<ul id= "login" >
 								<li>
 									Username:<br>
 									<input type="text" name="username"></li>
@@ -26,7 +25,6 @@
 									<input type="password" name="password"></li>
 								<li>
 									<input class="button" type="submit" name="login"></li>
-								</div>
 							</ul>
 						</form>
 					</div>
