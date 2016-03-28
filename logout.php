@@ -4,6 +4,6 @@ session_start();
 
 session_destroy();
 
-echo “<script>window.open(‘login.php’,’_self’)</script>”;
+echo "logout erfolgreich <a href='index.php'>internen Bereich</a>";
 
 ?>
