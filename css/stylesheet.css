@@ -164,3 +164,8 @@ div.file:hover {
     margin:10px;
     width:100px;
 }
+
+form.json{
+    width:100%;
+    padding: 50px;
+}

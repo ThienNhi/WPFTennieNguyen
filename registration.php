@@ -1,6 +1,9 @@
 <?php 
-session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=wpf', 'meinewelt', '12345');
+if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+$pdo = new PDO('mysql:host=localhost;dbname=wpf', 'root', '');
 ?>
 
     <!DOCTYPE HTML>

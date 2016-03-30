@@ -1,5 +1,9 @@
 <?php
-    session_start();?>
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+?>
 
     <ul id="menue">
         <li><a href="../index.php">Home</a></li>
