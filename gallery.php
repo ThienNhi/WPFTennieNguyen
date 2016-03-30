@@ -38,7 +38,7 @@
 									if(in_array($dateiinfo['extension'],$bildtypen)){
 							?>
             				<div class="galerie">
-                				<a href="<?php echo $dateiinfo['dirname']."/".$dateiinfo['basename'];?>" data-lightbox="images">
+                				<a href="<?php echo $dateiinfo['dirname']."/".$dateiinfo['basename'];?>" data-lightbox="images" >
                 				<img src="<?php echo $dateiinfo['dirname']."/".$dateiinfo['basename'];?>" width="130" alt="Vorschau" /></a> 
                 				<span><?php echo $dateiinfo['filename']; ?> (<?php echo $size ; ?>kb)</span>
             				</div>
