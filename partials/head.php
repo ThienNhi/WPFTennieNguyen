@@ -2,6 +2,10 @@
 <meta name="author" content="Nguyen und Tennie">
 <link rel="stylesheet" href="../css/stylesheet.css">
 <link rel="stylesheet" href="../css/lightbox.min.css">
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="style/bootstrap-theme.min.css" type="text/css">
+
 <script src="../js/lightbox-plus-jquery.min.js"></script>
 <script src="../js/skript.js" type="text/javascript"></script>
 
