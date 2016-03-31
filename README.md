@@ -1,5 +1,3 @@
-# WPFTennieNguyen
-
 #WPF 2016 Projekt (getestet mit xampp)
 
 How to Install<br/>
