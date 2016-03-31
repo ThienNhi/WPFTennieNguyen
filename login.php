@@ -16,7 +16,9 @@ if(isset($_GET['login'])) {
 	//Überprüfung des Passworts
 	if ($user !== false && password_verify($passwort, $user['passwort'])) {
 		$_SESSION['userid'] = $user['id'];
+        header("Location: index.php"); 
 		die('Login erfolgreich. Weiter zu <a href="index.php">internen Bereich</a>');
+        exit();
 	} else {
 		$errorMessage = "E-Mail oder Passwort war ungültig<br>";
 	}
@@ -29,7 +31,7 @@ if(isset($_GET['login'])) {
 
     <head>
         <?php include 'partials/head.php';?>
-        <title>Login</title>
+            <title>Login</title>
     </head>
 
     <?php 

@@ -6,7 +6,8 @@ if(!isset($_SESSION))
     } 
 
 session_destroy();
+echo "logout erfolgreich <a href='index.php'>externer Bereich</a>";
+header("Location: index.php"); 
 
-echo "logout erfolgreich <a href='index.php'>internen Bereich</a>";
 
 ?>

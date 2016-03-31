@@ -49,7 +49,6 @@ if (isset($_SESSION)) {
                                 <p align="justify">Bilddatei:</p>
                                 <input type="file" name="img">
                                 </br>
-
                                 <input type="submit" id="upload" name="submit" value="Upload">
 
                             </form>
@@ -65,11 +64,8 @@ if (isset($_SESSION)) {
                                 if($amountImages > 0){
                                     foreach ($images as $value) {
                                     echo '<a href="' . $value->path .'" data-lightbox="images" ><img src="' . $value->path .'" width="130" /></a>'; 
-                                    }
-                                } else{
-                                    echo "Es sind noch keine Bilder vorhanden!";
-                                }
-                            ?>
+                                       
+                                } } else{ echo "Es sind noch keine Bilder vorhanden!"; } ?>
                         </div>
                     </div>
 
