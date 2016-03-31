@@ -44,11 +44,12 @@ if (isset($_SESSION)) {
                     </div>
                     <div id="innerNext">
                         <div id="text">
-                            <p>Bildupload</p>
+                            <h3>Bildupload</h3>
+                            <p>Hier koennen Sie ihre Bilder ganz einfach hochladen.</p>
                             <form method="post" id="uploadForm" class="uploadForm" action="" enctype="multipart/form-data">
                                 <p align="justify">Bilddatei:</p>
                                 <label class="file">
-                                    <input type="file" id="file" name="img">
+                                    <input type="file" id="file" name="img" required>
                                     <span class="file-custom"></span>
                                     <input type="submit" id="upload" name="submit" value="Upload">
                                 </label>
