@@ -14,6 +14,9 @@ $(document).ready(function (e) {
                 {
                     $('#loading').hide();
                     $("#message").html(data);
+                    $('.uploadForm').each(function () {
+                        this.reset();
+                    });
                 }
         });
     }));

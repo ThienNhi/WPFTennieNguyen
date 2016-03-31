@@ -3,9 +3,9 @@ h1 {
     text-align: center;
 }
 
-title{
-    font-style:italic;
-    font-style:bold;
+title {
+    font-style: italic;
+    font-style: bold;
 }
 
 body.test {
@@ -67,8 +67,8 @@ div#text {
     text-align: left;
 }
 
-div#text p#upload{
-    padding:60px 0 0 0;
+div#text p#upload {
+    padding: 60px 0 0 0;
     text-align: center;
 }
 
@@ -76,7 +76,7 @@ form {
     width: 65%;
     margin-bottom: 50px;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 p {

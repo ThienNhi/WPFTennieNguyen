@@ -9,50 +9,62 @@ if(!isset($_SESSION))
 if (isset($_SESSION)) {
     $images       = $bilder->getImages($_SESSION['userid']);
 	$amountImages = sizeof($images);
+    $id = $_SESSION['userid'];
+    
+    $pdo = new PDO('mysql:host=localhost;dbname=wpf', 'root', '');
+    
+    $statement = $pdo->prepare("SELECT * FROM users WHERE id = :id");
+	$result = $statement->execute(array('id' => $id));
+	$user = $statement->fetch();
+
+    $email = $user["email"];
+    $created = $user["created_at"];
 }
+
 ?>
     <!DOCTYPE HTML>
     <html>
 
     <head>
         <?php include 'partials/head.php';?>
-        <title>Profilseite</title>
     </head>
 
     <body class="test">
         <div class="content">
             <!-- Menü-->
             <?php include 'partials/menue.php';?>
-            <?php include 'partials/navbar.php';?>
                 <div id="content">
                     <div id="inner">
                         <div id="text">
-                            <h1>Profilseite</h1>
-                            <p align="justify">Personendaten</p>
+                            <h2>Profilseite von <?php echo $email?></h2>
+                            <p align="justify">Mitglied seit:
+                                <?php echo $created?>
+                            </p>
                         </div>
                     </div>
                     <div id="innerNext">
                         <div id="text">
-                            <p id="upload">Bildupload</p>
-                            <form method="post" id="uploadForm" action="" enctype="multipart/form-data">
-                                <p>Bilddatei:</p>
+                            <p>Bildupload</p>
+                            <form method="post" id="uploadForm" class="uploadForm" action="" enctype="multipart/form-data">
+                                <p align="justify">Bilddatei:</p>
                                 <input type="file" name="img">
                                 </br>
-                                <input type="submit" id="buttonupload" name="submit" value="Upload">
+
+                                <input type="submit" id="upload" name="submit" value="Upload">
+
                             </form>
                         </div>
-                        <h4 id='loading' hidden="true">loading...</h4>
+                        <p id='loading' hidden="true">loading..</p>
                         <p id="message"></p>
                     </div>
 
                     <div id="innerLast">
-                        <p>Hochgeladene Bilder:</p>
+                        <p>Ihre Hochgeladenen Bilder:</p>
                         <div>
                             <?php
                                 if($amountImages > 0){
                                     foreach ($images as $value) {
-                                        echo '<a href="' . $value->path .'"></a>'; 
-                                        echo '<img src="' . $value->path .'" width="130" />';
+                                    echo '<a href="' . $value->path .'" data-lightbox="images" ><img src="' . $value->path .'" width="130" /></a>'; 
                                     }
                                 } else{
                                     echo "Es sind noch keine Bilder vorhanden!";
