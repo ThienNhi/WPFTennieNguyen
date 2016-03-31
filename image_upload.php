@@ -8,12 +8,4 @@ $userid = $_SESSION['userid'];
     
 $gallery->upload($data, $userid);
 
-if (isset($_FILES["file"]["type"])) {
-    $gallery->test();
-    
-    
-     
-    
-    
-}
 ?>
