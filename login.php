@@ -29,6 +29,7 @@ if(isset($_GET['login'])) {
 
     <head>
         <?php include 'partials/head.php';?>
+        <title>Login</title>
     </head>
 
     <?php 

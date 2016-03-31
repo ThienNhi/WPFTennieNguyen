@@ -11,6 +11,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=wpf', 'root', '');
 
     <head>
         <?php include 'partials/head.php';?>
+        <title>Registration</title>
     </head>
     <?php
         if(isset($_GET['register'])) {

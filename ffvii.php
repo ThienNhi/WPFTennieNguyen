@@ -3,6 +3,7 @@
 
 	<head>
 		<?php include 'partials/head.php';?>
+		<title>Final Fantasy VII</title>
 	</head>
 
 	<body class="test">

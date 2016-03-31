@@ -16,35 +16,37 @@ if (isset($_SESSION)) {
 
     <head>
         <?php include 'partials/head.php';?>
+        <title>Profilseite</title>
     </head>
 
     <body class="test">
         <div class="content">
             <!-- Menü-->
             <?php include 'partials/menue.php';?>
+            <?php include 'partials/navbar.php';?>
                 <div id="content">
                     <div id="inner">
                         <div id="text">
-                            <h1>Das ist die Profilseite des Nutzers</h1>
+                            <h1>Profilseite</h1>
                             <p align="justify">Personendaten</p>
                         </div>
                     </div>
                     <div id="innerNext">
                         <div id="text">
-                            <p>Bildupload</p>
+                            <p id="upload">Bildupload</p>
                             <form method="post" id="uploadForm" action="" enctype="multipart/form-data">
                                 <p>Bilddatei:</p>
                                 <input type="file" name="img">
                                 </br>
-                                <input type="submit" id="upload" name="submit" value="Upload">
+                                <input type="submit" id="buttonupload" name="submit" value="Upload">
                             </form>
                         </div>
-                        <h4 id='loading' hidden="true">loading..</h4>
+                        <h4 id='loading' hidden="true">loading...</h4>
                         <p id="message"></p>
                     </div>
 
                     <div id="innerLast">
-                        <p>Ihre Hochgeladenen Bilder:</p>
+                        <p>Hochgeladene Bilder:</p>
                         <div>
                             <?php
                                 if($amountImages > 0){

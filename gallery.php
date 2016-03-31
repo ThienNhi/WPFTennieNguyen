@@ -3,6 +3,7 @@
 
 	<head>
 		<?php include 'partials/head.php';?>
+		<title>Gallerie</title>
 	</head>
 
 	<body class="test">

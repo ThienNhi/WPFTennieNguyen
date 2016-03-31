@@ -3,6 +3,11 @@ h1 {
     text-align: center;
 }
 
+title{
+    font-style:italic;
+    font-style:bold;
+}
+
 body.test {
     margin: 50px 0px 0px 0px;
     font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
@@ -53,13 +58,17 @@ div#innerLast {
     border-radius: 0px 0px 20px 20px;
     margin-left: 10%;
     margin-top: 20px;
-    margin-bottom: 50px;
     padding: 15px 20px;
     border: solid 0.5px #000000;
     padding: 15px 50px;
 }
 
 div#text {
+    text-align: left;
+}
+
+div#text p#upload{
+    padding:60px 0 0 0;
     text-align: center;
 }
 
@@ -124,6 +133,15 @@ ul#navbar {
 ul#navbar li a img {
     width: 50%;
     height: 30%;
+}
+
+ul#navbar li p {
+    display: block;
+    color: #fff;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #555;
 }
 
 ul#navbar li a {
