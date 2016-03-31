@@ -23,3 +23,5 @@
  Deny from all
  Satisfy All
 </Files>
+
+Redirect /bspimages http://localhost/error.php
