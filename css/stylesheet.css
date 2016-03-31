@@ -1,31 +1,43 @@
 h1 {
-	color: white;
+    color: white;
     text-align: center;
 }
 
-body.test{ 
-    margin:50px 0px 0px 0px;
+body.test {
+    margin: 50px 0px 0px 0px;
     font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
     color: #333333;
     background: #111111 url("../img/sunset2.jpg") repeat fixed top center;
 }
 
 div#content {
-    width:50%;
-    background-color:rgba(0, 0, 0, .5);
+    width: 50%;
+    background-color: rgba(0, 0, 0, .5);
     font-family: serif;
     border: 1px solid black;
     border-radius: 20px;
-    margin-left:25%;
+    margin-left: 25%;
     border: solid 2px #000000;
 }
 
 div#inner {
-    width:80%;
+    width: 80%;
     background-color: white;
     font-family: serif;
     border: 1px solid black;
     border-radius: 20px 20px 0px 0px;
+    margin-left: 10%;
+    margin-top: 40px;
+    padding: 15px 20px;
+    border: solid 0.5px #000000;
+    padding: 15px 50px;
+}
+
+div#innerNext {
+    width: 80%;
+    background-color: white;
+    font-family: serif;
+    border: 1px solid black;
     margin-left: 10%;
     margin-top: 20px;
     padding: 15px 20px;
@@ -33,20 +45,34 @@ div#inner {
     padding: 15px 50px;
 }
 
-div#text{
+div#innerLast {
+    width: 80%;
+    background-color: white;
+    font-family: serif;
+    border: 1px solid black;
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    border: solid 0.5px #000000;
+    padding: 15px 50px;
+}
+
+div#text {
     text-align: center;
 }
 
 form {
-    width:65%;
+    width: 65%;
     margin-bottom: 50px;
-    padding-top:50px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }
 
 p {
     font-size: 20px;
-    opacity:1;
+    opacity: 1;
 }
 
 ul#menue {
@@ -62,7 +88,7 @@ ul#menue li {
     float: left;
 }
 
-ul#menue li a{
+ul#menue li a {
     display: block;
     color: white;
     text-align: center;
@@ -72,8 +98,8 @@ ul#menue li a{
 }
 
 ul#login {
-	float:right;
-	list-style-type:none;
+    float: right;
+    list-style-type: none;
 }
 
 div#nav-outer {
@@ -86,12 +112,12 @@ div#nav-outer {
 }
 
 ul#navbar {
-    color:white;
+    color: white;
     list-style-type: none;
     background: transparent;
     text-align: center;
     width: 80%;
-    height:80%;
+    height: 80%;
     position: absolute;
 }
 
@@ -115,7 +141,7 @@ li a:hover {
 }
 
 div#footer {
-    color:#cccccc;
+    color: #cccccc;
     background: transparent url("../img/footer.png") repeat scroll top left;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
@@ -125,47 +151,47 @@ div#footer {
     padding: 10px 20px 20px;
 }
 
-div.galerie{
+div.galerie {
     padding: 3px;
-    background-color:#ebebeb;
-    border:1px solid #CCC;
+    background-color: #ebebeb;
+    border: 1px solid #CCC;
     float: left;
     margin: 1px;
-    font-family:Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-div.galerie:hover{
-    border:1px solid #333;
+div.galerie:hover {
+    border: 1px solid #333;
 }
 
-div.galerie span{
-    display:block;
-    text-align:center;
-    font-size:10px;
+div.galerie span {
+    display: block;
+    text-align: center;
+    font-size: 10px;
 }
 
 div.file {
-    padding:4px 4px 4px 30px;
+    padding: 4px 4px 4px 30px;
 }
 
-div.file.even{
+div.file.even {
     background-color: #ebebeb;
 }
 
 div.file a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 div.file:hover {
-    background-color:#CCC;
+    background-color: #CCC;
 }
 
 .button {
-    margin:10px;
-    width:100px;
+    margin: 10px;
+    width: 100px;
 }
 
-form.json{
-    width:100%;
+form.json {
+    width: 100%;
     padding: 50px;
 }

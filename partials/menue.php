@@ -12,6 +12,7 @@
             <?php
     if(isset($_SESSION['userid'])) {
         ?>
+                <li><a href="../profil.php">Profile</a></li>
                 <li><a href="../logout.php">Logout</a></li>
                 <?php
     } else{
